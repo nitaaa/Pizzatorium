@@ -10,8 +10,8 @@ namespace ThePizzatorium_Qaanita_Fataar.Models
     {
         public DbSet<User> Users { get; set; }
         public DbSet<Address> Addresses { get; set; }
-        //public DbSet<Pizza> Pizzas { get; set; }
-        //public DbSet<Ingredient> Ingredients { get; set; }
+        public DbSet<Pizza> PredefinedPizzas { get; set; }
+        public DbSet<Ingredient> Ingredients { get; set; }
 
         private static PizzatoriumDB DBData = new PizzatoriumDB();
 
