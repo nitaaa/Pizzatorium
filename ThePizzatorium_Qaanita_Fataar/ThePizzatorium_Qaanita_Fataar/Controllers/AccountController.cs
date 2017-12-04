@@ -16,12 +16,13 @@ namespace ThePizzatorium_Qaanita_Fataar.Controllers
 
         // GET: Account
         [UserAuthentication(NeedsAdmin = true)]
-        public ActionResult Index()
+        public ActionResult ListUsers()
         {
             return View(db.Users.ToList());
         }
 
         // GET: Account/Details/5
+        [UserAuthentication(NeedsLogin = true)]
         public ActionResult Details(int? id)
         {
             if (id == null)
@@ -60,6 +61,7 @@ namespace ThePizzatorium_Qaanita_Fataar.Controllers
         }
 
         // GET: Account/Edit/5
+        [UserAuthentication(NeedsLogin = true)]
         public ActionResult Edit(int? id)
         {
             if (id == null)
@@ -91,6 +93,7 @@ namespace ThePizzatorium_Qaanita_Fataar.Controllers
         }
 
         // GET: Account/Delete/5
+        [UserAuthentication(NeedsLogin = true)]
         public ActionResult Delete(int? id)
         {
             if (id == null)

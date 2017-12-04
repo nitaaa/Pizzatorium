@@ -156,6 +156,7 @@
     <Compile Include="Models\Pizza.cs" />
     <Compile Include="Models\PizzatoriumDB.cs" />
     <Compile Include="Models\User.cs" />
+    <Compile Include="Models\UserAuthentication.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -200,7 +201,7 @@
     <Content Include="Views\Account\Delete.cshtml" />
     <Content Include="Views\Account\Details.cshtml" />
     <Content Include="Views\Account\Edit.cshtml" />
-    <Content Include="Views\Account\Index.cshtml" />
+    <Content Include="Views\Account\ListUsers.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
