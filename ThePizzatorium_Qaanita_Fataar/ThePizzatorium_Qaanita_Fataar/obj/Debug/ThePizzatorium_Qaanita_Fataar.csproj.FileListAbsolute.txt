@@ -69,3 +69,6 @@ C:\Users\User\Documents\CTU\Pizzatorium\ThePizzatorium_Qaanita_Fataar\ThePizzato
 C:\Users\User\Documents\CTU\Pizzatorium\ThePizzatorium_Qaanita_Fataar\ThePizzatorium_Qaanita_Fataar\bin\EntityFramework.SqlServer.dll
 C:\Users\User\Documents\CTU\Pizzatorium\ThePizzatorium_Qaanita_Fataar\ThePizzatorium_Qaanita_Fataar\bin\EntityFramework.xml
 C:\Users\User\Documents\CTU\Pizzatorium\ThePizzatorium_Qaanita_Fataar\ThePizzatorium_Qaanita_Fataar\bin\EntityFramework.SqlServer.xml
+C:\Users\User\Documents\GitHub\Pizzatorium\ThePizzatorium_Qaanita_Fataar\ThePizzatorium_Qaanita_Fataar\obj\Debug\ThePizzatorium_Qaanita_Fataar.csprojResolveAssemblyReference.cache
+C:\Users\User\Documents\GitHub\Pizzatorium\ThePizzatorium_Qaanita_Fataar\ThePizzatorium_Qaanita_Fataar\obj\Debug\ThePizzatorium_Qaanita_Fataar.dll
+C:\Users\User\Documents\GitHub\Pizzatorium\ThePizzatorium_Qaanita_Fataar\ThePizzatorium_Qaanita_Fataar\obj\Debug\ThePizzatorium_Qaanita_Fataar.pdb
