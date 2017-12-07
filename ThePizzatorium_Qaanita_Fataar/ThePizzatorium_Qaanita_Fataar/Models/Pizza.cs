@@ -36,11 +36,4 @@ namespace ThePizzatorium_Qaanita_Fataar.Models
         }
 
     }
-
-    public enum PizzaSize
-    {
-        Small,
-        Medium,
-        Large
-    }
 }

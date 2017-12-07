@@ -12,6 +12,7 @@ namespace ThePizzatorium_Qaanita_Fataar.Models
         public int ID { get; set; }
         public string Name { get; set; }
         public double Price { get; set; }
+        public PizzaSize Size { get; set; }
 
         public static List<Ingredient> Get(string stringIDs)
         {
@@ -33,5 +34,16 @@ namespace ThePizzatorium_Qaanita_Fataar.Models
         {
             return PizzatoriumDB.PizzaData.Ingredients.Where(i => IDs.Contains(i.ID)).ToList();
         }
+
+
+    }
+
+    
+
+    public enum PizzaSize
+    {
+        Small,
+        Medium,
+        Large
     }
 }

@@ -1,0 +1,67 @@
+﻿@model IEnumerable<ThePizzatorium_Qaanita_Fataar.Models.Ingredient>
+
+@{
+    ViewBag.Title = "DesignPizza";
+}
+
+<h2>Design Your Pizza Here!</h2>
+
+<div class="btn-group" data-toggle="buttons">
+    <label class="btn btn-primary active">
+        <input type="radio" name="options" id="small"> Small (R15)
+    </label>
+    <label class="btn btn-primary">
+        <input type="radio" name="options" id="medium"> Medium (R20)
+    </label>
+    <label class="btn btn-primary">
+        <input type="radio" name="options" id="large"> Large (R40)
+    </label>
+</div>
+
+<br />
+
+<div class="btn-group" data-toggle="buttons">
+    @foreach (var item in Model)
+    {
+        if (item.Name.Contains("Base"))
+        {
+            <label class="btn btn-primary">
+                <input type="radio"> @Html.DisplayFor(modelItem => item.Name)
+            </label>
+        }
+
+
+    }
+</div>
+<br />
+<div class="btn-group" data-toggle="buttons">
+    @foreach (var item in Model)
+    {
+        if (item.Name.Contains("Sauce"))
+        {
+            <label class="btn btn-primary">
+                <input type="radio"> @Html.DisplayFor(modelItem => item.Name)
+            </label>
+        }
+    }
+</div>
+<br />
+<div class="btn-group-justified" data-toggle="buttons">
+    @foreach (var item in Model)
+    {
+        if (!item.Name.Contains("Base") && !item.Name.Contains("Sauce"))
+        {
+            <label class="btn btn-primary col-md-4 col-lg-3" style="margin: 3px">
+                <input type="checkbox"> @Html.DisplayFor(modelItem => item.Name)
+            </label>
+        }
+    }
+</div>
+
+<div class="form-group">
+    <div class="col-md-offset-2 col-md-10">
+        <input type="submit" value="Checkout" class="btn  btn-outline-info" />
+    </div>
+</div>
+
+

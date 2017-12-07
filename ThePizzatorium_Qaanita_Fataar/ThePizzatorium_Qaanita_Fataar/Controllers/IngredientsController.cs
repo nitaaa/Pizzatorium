@@ -14,6 +14,26 @@ namespace ThePizzatorium_Qaanita_Fataar.Controllers
     {
         private PizzatoriumDB db = new PizzatoriumDB();
 
+        public ActionResult DesignPizza()
+        {
+            ViewBag.IngredientsList = new List<Ingredient>();
+            return View(db.Ingredients.ToList());
+        }
+
+        //change
+        //[HttpPost]
+        //public ActionResult DesignPizza([Bind(Include = "ID,Name,Price")] Ingredient ingredient)
+        //{
+        //    if (ModelState.IsValid)
+        //    {
+        //        db.Entry(ingredient).State = EntityState.Modified;
+        //        db.SaveChanges();
+        //        return RedirectToAction("Index");
+        //    }
+        //    return View(ingredient);
+        //}
+
+
         // GET: Ingredients
         public ActionResult Index()
         {

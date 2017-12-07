@@ -26,5 +26,10 @@ namespace ThePizzatorium_Qaanita_Fataar.Controllers
 
             return View();
         }
+
+        public ActionResult Checkout()
+        {
+            return View();
+        }
     }
 }
