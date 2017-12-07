@@ -12,17 +12,27 @@ namespace ThePizzatorium_Qaanita_Fataar.Models
         public int ID { get; set; }
         public string Name { get; set; }
         public PizzaSize Size { get; set; }
-        public string Ingredients { get; set; } = "";
+        public string PizzaIngredients { get; set; } = "";
         public double Price { get; set; }
 
-        public static Pizza GetPizza(int _ID)
+        public List<int> Ingredients
         {
-            return PizzatoriumDB.PizzaData.Pizzas.Single(p => _ID == p.ID);
-        }
+            get
+            {
+                if (this.PizzaIngredients == "")
+                    return new List<int> { };
+                List<string> _list = this.PizzaIngredients.Split(',').ToList();
+                if (_list.Count > 0)
+                {
+                    return _list.Select(i => Convert.ToInt32(i)).ToList();
+                }
+                return new List<int> { };
 
-        public void AddIngredient(Ingredient ing)
-        {
-            Ingredients += ing.ID + ",";
+            }
+            set
+            {
+                this.PizzaIngredients = value.Select(i => i.ToString()).Aggregate((i, j) => i + ',' + j);
+            }
         }
 
     }

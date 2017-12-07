@@ -28,11 +28,9 @@ namespace ThePizzatorium_Qaanita_Fataar.Models
         [Required(ErrorMessage = "Please enter a password")]
         [DataType(DataType.Password)]
         public string Password { get; set; }
-
-        [ForeignKey("Address")]
+        
         public Address AddressID { get; set; }
-
-        [ForeignKey("Pizza")]
+        
         public Pizza FavPizzaID { get; set; }
 
 
